@@ -20,13 +20,13 @@ body{
     background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb {
-    background: #6e93f7;
+    background: #0E2431;
     border-radius: 12px;
     transition: all 0.3s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #4070f4;
+    background: #0E2431;
 }
 /* navbar styling */
 nav{
@@ -38,7 +38,7 @@ nav{
   font-family: 'Ubuntu', sans-serif;
 }
 nav.sticky{
-  background: #4070f4;
+  background: #0E2431;
   padding: 13px 0;
 }
 nav .navbar{
@@ -51,10 +51,10 @@ nav .navbar{
 nav .navbar .logo a{
   font-weight: 500;
   font-size: 35px;
-  color: #4070f4;
+  color: #0E2431;
 }
 nav.sticky .navbar .logo a{
-  color: #fff;
+  color:  #0E2431;
 }
 nav .navbar .menu{
   display: flex;
@@ -72,7 +72,7 @@ nav .navbar .menu li{
   transition: all 0.4s ease;
 }
 .navbar .menu a:hover{
-  color: #4070f4;
+  color: #0E2431;
 }
 nav.sticky .menu a{
   color: #FFF;
@@ -84,7 +84,7 @@ nav.sticky .menu a:hover{
 
 
 .navbar .media-icons a{
-  color: #4070f4;
+  color: #0E2431;
   font-size: 18px;
   margin: 0 6px;
 }
@@ -105,7 +105,7 @@ nav .menu-btn,
   display: none;
 }
 nav .menu-btn{
-  color: #4070f4;
+  color: #0E2431;
 }
 nav.sticky .menu-btn{
   color: #FFF;
@@ -118,11 +118,13 @@ nav.sticky .menu-btn{
 .home{
   height: 100vh;
   width: 100%;
+  background-color: darkgrey;
+  background-size: cover;
  
 
 
   
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Times New Roman', Times, serif;
 }
 .home .home-content{
   width: 90%;
@@ -145,7 +147,7 @@ nav.sticky .menu-btn{
 .home .text-three{
   font-size: 40px;
   margin: 5px 0;
-  color: #4070f4;
+  color: brown;
 }
 .home .text-four{
   font-size: 23px;
@@ -161,16 +163,16 @@ nav.sticky .menu-btn{
   border-radius: 6px;
   font-size: 25px;
   font-weight: 400;
-  background: #4070f4;
+  background: #777;
   color: #fff;
   cursor: pointer;
   border: 2px solid transparent;
   transition: all 0.4s ease;
 }
 .home .button button:hover{
-  border-color: #4070f4;
+  border-color: brown;
   background-color: #fff;
-  color: #4070f4;
+  color: brown;
 }
 
 /* About Section Styling */
@@ -195,7 +197,7 @@ section .title{
   margin-bottom: 40px;
 }
 section .title span{
-  color: #0E2431;
+ color: #0E2431;
   font-size: 30px;
   font-weight: 600;
   position: relative;
@@ -207,7 +209,7 @@ section .title span::after{
   position: absolute;
   height: 3px;
   width: 100%;
-  background: #4070f4;
+  background: #777;
   left: 0;
   bottom: 0;
 }
@@ -250,16 +252,16 @@ section .button button{
   border-radius: 4px;
   font-size: 25px;
   font-weight: 400;
-  background: #4070f4;
+  background: #777;
   color: #fff;
   border: 2px solid transparent;
   cursor: pointer;
   transition: all 0.4s ease;
 }
 section .button button:hover{
-  border-color: #4070f4;
+  background-color: darkslategray;
   background-color: #fff;
-  color: #4070f4;
+  color:darkslategray;
 }
 
  /* My Skills CSS */
@@ -309,11 +311,11 @@ section .button button:hover{
 }
 .skills-details .boxes .topic{
   font-size: 20px;
-  color: #4070f4;
+  color: maroon;
 }
 .skills-details .boxes .per{
   font-size: 60px;
-  color: #4070f4;
+  color: maroon
 }
 
 /* My Services CSS */
@@ -333,13 +335,13 @@ section .button button:hover{
   transition: all 0.4s ease;
 }
 .services .boxes .box:hover{
-  background: #4070f4;
+  background: gray;
   color: #fff;
 }
 .services .boxes .box .icon{
   height: 50px;
   width: 50px;
-  background: #4070f4;
+  background:grey;
   border-radius: 50%;
   text-align: center;
   line-height: 50px;
@@ -350,7 +352,7 @@ section .button button:hover{
 }
 .boxes .box:hover .icon{
   background-color: #fff;
-  color: #4070f4;
+  color: gray;
 }
 .services .boxes .box:hover .topic,
 .services .boxes .box:hover p{
@@ -377,7 +379,7 @@ section .button button:hover{
 
 /* Footer CSS */
 footer{
-  background: #4070f4;
+  background: black;
   padding: 15px 0;
   text-align: center;
   font-family: 'Poppins', sans-serif;
@@ -400,7 +402,7 @@ footer .text span a:hover{
   bottom: 20px;
   right: 20px;
   color: #fff;
-  background: #4070f4;
+  background: black;
   padding: 7px 12px;;
   font-size: 18px;
   border-radius: 6px;
@@ -467,7 +469,7 @@ footer .text span a:hover{
     margin: 10px 0;
   }
   nav.sticky .menu a:hover{
-    color: #4070f4;
+    color: black;
   }
   nav .navbar .media-icons{
     display: none;
