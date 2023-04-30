@@ -1,248 +1,763 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=.0">
-    <title>Nelluri Venkat | Front-end Developer | JavaScript Portfolio</title>
-    <meta name="description" content="A sample collection of my recent JavaScript projects.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nelluri Venkat - Portfolio Website</title>
 
-	<!-- Stylesheets -->
-    <link rel="stylesheet" href="assets/css/lunadoge.css" />
-    <link rel="stylesheet" href="assets/css/css-javascript.css" />
+    <!--Swiper CSS-->
+    <link rel="stylesheet" href="assets/styles/swiper-bundle.min.css">
 
-    <style>
+    <!-- Main Style Sheet -->
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="stylesheet" href="assets/styles/responsive.css">
 
-        /* ============ Header Colours =============*/
-        header.hero-block-js { background-color: #f7df1e }
-        header.hero-block-js h1 { color: #222 }
-        header.hero-block-js h2 { color: var(--gray-700) }
 
-        /* Main Colours */
-        .theme-js {
-            background-image:#ff0000;background-image:
-            radial-gradient(at 40% 20%, hsla(28,100%,74%,1) 0, transparent 50%),
-            radial-gradient(at 80% 0%, hsla(189,100%,56%,1) 0, transparent 50%),
-            radial-gradient(at 0% 50%, hsla(355,85%,93%,1) 0, transparent 50%),
-            radial-gradient(at 80% 50%, hsla(340,100%,76%,1) 0, transparent 50%),
-            radial-gradient(at 0% 100%, hsla(22,100%,77%,1) 0, transparent 50%),
-            radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0, transparent 50%),
-            radial-gradient(at 0% 0%, hsla(343,100%,76%,1) 0, transparent 50%);
-        }
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 
-        .theme-js .col-4 { background-color: var(--green-100) }
-        .theme-js h3 { color: #222 }
-        .theme-js p { color: #222 }
-
-        /* Button Colours: passive state */
-        .theme-js a.btn {
-            color: #fff; background-color: blue; transition: 0.2s;
-            border-radius: 6px
-        }
-
-        /* Button Colours: active state */
-        .theme-js a.btn:hover { background-color: darkblue }
-
-        .theme-js a.btn { background-image: linear-gradient(to right,#e052a0,#f15c41) }
-        .theme-js a.btn:hover { filter: brightness(140%) saturate(140%) }
-
-    </style>
-
-	<!-- Font Awesome 6.1 icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
-
 <body>
 
-    <!-- navigation menu -->
+    <header id="header">
 
-    <nav class="container-menu menu-desktop menu-sticky">
-        <a href="../../index.html"><img src="assets/img/website-logo-sample.png" alt="website logo"></a>
-        <ul class="">
-            <li><a href="../../index.html">Home</a></li>
-            <li><a href="../index.html">Portfolio</a></li>
-            <li><a href="../../contact/index.html" id="btn-cta"><span>Contact</span><i class="fas fa-arrow-right"></i></a></li>
-        </ul>
-        <div class="item-icon">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-        </div>
-    </nav>
+        <div class="header-top">
+            <img class="img-dp" src="assets/images/dp.png" alt="">
+            <h1>Nelluri Venkat</h1>
+            <div class="social-links">
 
-    <!-- header hero block -->
-    <header class="hero-block hero-block-js">
-        <div class="hero-text-container">
-            <h1>JavaScript Projects</h1>
-            <h2>A selection of my recent JavaScript projects.</h2>
-            <img src="assets/img/code.png" alt="Sample JavaScript code">
+                <a href="https://www.linkedin.com/in/venkat-nelluri-986797263"><img src="assets/icons/linkedin.png"
+                        alt=""></a>
+
+                <a href="https://github.com/nellurivenkat/"><img src="assets/icons/github.png" alt=""></a>
+            </div>
         </div>
+
+        <div class="header-menu-list">
+
+            <div>
+                <span onclick="toTop()" class="material-icons-outlined active_icon">home</span>
+                <p onclick="toTop()" class="text active_text">Home</p>
+            </div>
+
+            <a href="#about">
+                <div>
+                    <span class="material-icons-outlined">person_outline</span>
+                    <p>About</p>
+                </div>
+            </a>
+
+
+            <a href="#portfolio">
+                <div>
+                    <span class="material-icons-outlined">work_outline</span>
+                    <p>Portfolio</p>
+                </div>
+            </a>
+
+            <a href="js_projects/index.html">
+                <div>
+                    <span class="material-icons-outlined">javascript</span>
+                    <p>Javascript Projects</p>
+                </div>
+            </a>
+
+            <a href="#services">
+
+                <div>
+                    <span class="material-icons-outlined">dns</span>
+                    <p>Services</p>
+                </div>
+
+            </a>
+
+            <a href="#contact">
+                <div>
+                    <span class="material-icons-outlined">mail_outline</span>
+                    <p>Contact</p>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="header-copyright">
+            <p>Nelluri Venkat &copy; 2023</span></p>
+        </div>
+
     </header>
 
-    <!-- main content with sections -->
-    <main>
+    <div class="close-toggle">
+        <!-- <div class="hero"> -->
+        <section id="hero">
 
-        <section class="container-flex theme-js">
-
-            <div class="col-4">
-
-                <h3>Data Tables</h3>
-
-                <p>Populates an HTML table with data stored in an array. Includes the option to remove data items.</p>
-
-                <div class="container-btn">
-                    <a href="data-tables/index.html" class="btn btn-primary"><span>View project</span> <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <div class="col-4">
-
-                <h3>Weather for Dublin</h3>
-
-                <p>Uses the Fetch API to retrieve current weather information for the city of Dublin, Ireland.</p>
-
-                <div class="container-btn">
-                    <a href="weather/index.html" class="btn btn-primary"><span>View project</span> <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <div class="col-4">
-
-                <h3>Movies Listing</h3>
-
-                <p>Uses the Fetch API to retrieve a searchable list of movie titles and images from the Internet Movie Database.</p>
-
-                <div class="container-btn">
-                    <a href="movies/index.html" class="btn btn-primary"><span>View project</span> <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <div class="col-4">
-
-                <h3>Random Quotes Generator</h3>
-
-                <p>Uses the Fetch API to retrieve a randomly-choosen selection of ten inspiring quotations.</p>
-
-                <div class="container-btn">
-                    <a href="quotes/index.html" class="btn btn-primary"><span>View project</span> <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-
-            <div class="col-4">
-
-                <h3>Calculator with Modules</h3>
-
-                <p>A basic calculator that uses export/import statements to share code with a JavaScript module file.</p>
-
-                <div class="container-btn">
-                    <a href="calculator-modules/index.html" class="btn btn-primary"><span>View project</span> <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <div class="col-4">
-
-                <h3>Image Blur Filter</h3>
-
-                <p>Uses CSS variables and HTML custom data attributes to adjust the filter blur property of an image.</p>
-
-                <div class="container-btn">
-                    <a href="image-blur-filter/index.html" class="btn btn-primary"><span>View project</span> <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <div class="col-4">
-
-                <h3>Counter</h3>
-
-                <p>An increment and decrement counter that changes the colour of the number displayed on the web page.</p>
-
-                <div class="container-btn">
-                    <a href="counter/index.html" class="btn btn-primary"><span>View project</span> <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <div class="col-4">
-
-                <h3>Tip Calculator</h3>
-
-                <p>Calculates the tip for a restaurant bill based on the level of service and the number of customers.</p>
-
-                <div class="container-btn">
-                    <a href="tip-calculator/index.html" class="btn btn-primary"><span>View project</span> <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <div class="col-4">
-
-                <h3>Image Slideshow</h3>
-
-                <p>A slideshow with an array of images from Dublin city, Ireland.</p>
-
-                <div class="container-btn">
-                    <a href="image-slideshow/index.html" class="btn btn-primary"><span>View project</span> <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-
-            <div class="col-4">
-
-                <h3>Random Colour Generator</h3>
-
-                <p>Uses an array of hexadecimal values to randomly generate a background colour for the web page.</p>
-
-                <div class="container-btn">
-                    <a href="colours/index.html" class="btn btn-primary"><span>View project</span> <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-            </div>
-
-            <div class="col-4" style="background-color: transparent;">
-
-                <p></p>
-            </div>
-
-            <div class="col-4"  style="background-color: transparent;">
-
-                <p></p>
+            <div class="hero-text">
+                <h1>Nelluri Venkat</h>
+                    <p>I'm a <span class="auto-type"></span></p>
             </div>
 
         </section>
+        <!-- </div> -->
 
-    </main>
 
 
-    <!-- footer -->
-	<footer>
+        <main id="main">
+            <div class="container">
 
-		<h2>Nelluri Venkat</h2>
+                <!-- About -->
+                <section id="about">
+                    <div class="about-top">
+                        <h1>About</h1>
+                        <span class="underline"></span>
+                        <p>Passionate about coding and problem solving</p>
+                    </div>
 
-		<h3>Excellence in digital creation</h3>
+                    <div class="about-content">
 
-		<ul class="footer-links">
-			<li><a href="../../index.html">Home</a></li>
-			<li><a href="#">Portfolio</a></li>
-			<li><a href="../../contact/index.html">Contact</a></li>
-		</ul>
+                        <div class="about-content-left">
+                            <img src="assets/images/dp.png" alt="">
+                        </div>
 
-		<ul class="footer-icons">
-			<li><a href="https://www.linkedin.com/in/venkat-nelluri-986797263" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-			<li><a href="https://github.com/nellurivenkat/" target="_blank"><i class="fab fa-github-square"></i></a></li>
-		</ul>
+                        <div class="about-content-right">
+                            <h1 style="font-size: 26px" class="section-title">Fullstack Web Developer</h1>
+                            <p style="margin-top: 0.5rem;">Love developing massive dynamic websites, topnotch projects
+                                with PHP and other stacks</p>
 
-		<p class="index.html"> <a href="../../privacy.html" style="color: #fff; background-color:transparent;">Privacy &amp; Legal</a> </p>
+                            <div class="about-content-info">
+                                <div class="about-content-info-left">
 
-    </footer>
+                                    <div class="flex-list">
+                                        <img src="assets/icons/arrow.png" alt="">
+                                        <p><b>Name:</b> Nelluri Venlat</p>
+                                    </div>
 
-    <script src="assets/js/menu.js"></script>
+                                    <div class="flex-list">
+                                        <img src="assets/icons/arrow.png" alt="">
+                                        <p><b>Website:</b> <a
+                                                href="https://www.linkedin.com/in/venkat-nelluri-986797263">Nelluri
+                                                Venkat</a></p>
+                                    </div>
+
+                                    <div class="flex-list">
+                                        <img src="assets/icons/arrow.png" alt="">
+                                        <p><b>Phone:</b> +393898267495</p>
+                                    </div>
+
+                                    <div class="flex-list">
+                                        <img src="assets/icons/arrow.png" alt="">
+                                        <p><b>City:</b> Dublin, Ireland</p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                </section>
+
+
+                <!-- Facts About Me -->
+                <section id="fact-about-me">
+
+
+                    <div class="about-top">
+                        <h1>Facts about me!</h1>
+                        <span class="underline"></span>
+                    </div>
+
+                    <div class="fact-lists">
+
+                        <div class="flex-lists">
+                            <img src="assets/icons/circle.png" alt="">
+                            <p>Hi, I'm a passionate computer science student who loves designing websites. I'm dedicated
+                                to creating user-friendly and visually appealing sites that leave a lasting impression.
+                                Let's work together!</p>
+                        </div>
+
+                        <div class="flex-lists">
+                            <img src="assets/icons/circle.png" alt="">
+                            <p>I am a passionate computer science student who loves designing websites that are not only
+                                functional but visually appealing.</p>
+                        </div>
+
+
+
+                    </div>
+
+
+                    <div class="achievements" data-aos="flip-down">
+
+                        <div class="achievement-box">
+                            <img src="assets/icons/smile.png" alt="">
+
+                            <div class="achievement-box-text">
+                                <h1 style="font-size: 48px; color: var(--brand-color-dark); font-weight: 700;"
+                                    class="h1-achi">+15</h1>
+                                <h1 style="font-size: 14px; font-family: 'Raleway', sans-serif">Happy Clients</h1>
+                                <p style="font-size: 14px; line-height: 20px; margin-top: 0.2rem;">Your satisfaction is
+                                    my priority.</p>
+                            </div>
+                        </div>
+
+                        <div class="achievement-box">
+                            <img src="assets/icons/work.png" alt="">
+
+                            <div class="achievement-box-text">
+                                <h1 style="font-size: 48px; color: var(--brand-color-dark); font-weight: 700;"
+                                    class="h1-achi">+25</h1>
+                                <h1 style="font-size: 14px; font-family: 'Raleway', sans-serif">Projects</h1>
+                                <p style="font-size: 14px; line-height: 20px; margin-top: 0.2rem;">Of all kinds</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="achievement-box">
+                            <img src="assets/icons/like.png" alt="">
+
+                            <div class="achievement-box-text">
+                                <h1 style="font-size: 48px; color: var(--brand-color-dark); font-weight: 700;"
+                                    class="h1-achi">+10</h1>
+                                <h1 style="font-size: 14px; font-family: 'Raleway', sans-serif">Testimonies</h1>
+                                <p style="font-size: 14px; line-height: 20px; margin-top: 0.2rem;">From projects</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </section>
+            </div>
+
+
+
+            <div class="skills">
+                <div class="about-top">
+                    <h1>Skills</h1>
+                    <span class="underline"></span>
+                </div>
+
+                <div class="skills-list" data-aos="flip-up">
+
+                    <div class="skill-div">
+                        <img src="assets/icons/html-5.png" alt="">
+                        <div class="skill-div-text">
+                            <h1>HTML5</h1>
+                            <p>89%</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-div">
+                        <img src="assets/icons/css3.png" alt="">
+                        <div class="skill-div-text">
+                            <h1>CSS3</h1>
+                            <p>72%</p>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="skill-div">
+                        <img src="assets/icons/js.png" alt="">
+                        <div class="skill-div-text">
+                            <h1>Javascript</h1>
+                            <p>75%</p>
+                        </div>
+                    </div>
+
+
+                    <div class="skill-div">
+                        <img src="assets/icons/ux.png" alt="">
+                        <div class="skill-div-text">
+                            <h1>UI/UX</h1>
+                            <p>88%</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="skills-list-mobile" data-aos="flip-up">
+                    <div class="about-content-info">
+                        <div class="about-content-info-left">
+
+                            <div class="flex-list">
+                                <img src="assets/icons/html-5.png" alt="">
+                                <p><b>HTML5:</b>89%</p>
+                            </div>
+
+                            <div class="flex-list">
+                                <img src="assets/icons/css3.png" alt="">
+                                <p><b>CSS3:</b>72%</p>
+                            </div>
+
+
+                            <div class="flex-list">
+                                <img src="assets/icons/js.png" alt="">
+                                <p><b>Js:</b>75%</p>
+                            </div>
+
+                            <div class="flex-list">
+                                <img src="assets/icons/ux.png" alt="">
+                                <p><b>UI/UX:</b>88%</p>
+                            </div>
+
+                        </div>
+
+                        <div class="flex-list">
+                            <div class="flex-list">
+                                <img src="assets/icons/ux.png" alt="">
+                                <p><b>UI/UX:</b>88%</p>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="skills" id="portfolio">
+                <div class="about-top">
+                    <h1>Portfolio</h1>
+                    <span class="underline"></span>
+                    <p>Below are some of my projects</p>
+                </div>
+
+
+
+                <div class="gallery-categories">
+
+                    <div class="group">
+                        <div class="gallery-category-switch">
+                            <p>MY PROJECTS</p>
+
+                        </div>
+                    </div>
+
+                    <div class="group2">
+                        <div class="gallery-images">
+
+                            <div class="gallery-image ">
+                                <img src="assets/images/javascriptprojects.png" alt="">
+                                <a href="js_projects/index.html">
+                                    <div class="card-info">
+                                        <img src="assets/icons/link.png" alt="">
+
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="gallery-image ">
+                                <img src="assets/images/snazzycryptowallet.png" alt="">
+                                <a href="projects/crypto-wallet/index.html">
+                                    <div class="card-info">
+                                        <img src="assets/icons/link.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="gallery-image ">
+                                <img src="assets/images/smoothies.png" alt="">
+                                <a href="projects/smoothies/index.html">
+                                    <div class="card-info">
+                                        <img src="assets/icons/link.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="gallery-image ">
+                                <img src="assets/images/vangogh.png" alt="">
+                                <a href="projects/van-gogh/index.html">
+                                    <div class="card-info">
+                                        <img src="assets/icons/link.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="gallery-image ">
+                                <img src="assets/images/supersnazzyfashions.png" alt="">
+                                <a href="projects/fashion/index.html">
+                                    <div class="card-info">
+                                        <img src="assets/icons/link.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="gallery-image ">
+                                <img src="assets/images/projecthero.png" alt="">
+                                <a href="projects/project-hero/index.html">
+                                    <div class="card-info">
+                                        <img src="assets/icons/link.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="gallery-image ">
+                                <img src="assets/images/projectmulticolumn.png" alt="">
+                                <a href="projects/project-multi-column/index.html">
+                                    <div class="card-info">
+                                        <img src="assets/icons/link.png" alt="">
+                                    </div>
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div class="container">
+                <section id="services">
+                    <div class="about-top">
+                        <h1>Services</h1>
+                        <span class="underline"></span>
+                        <p>My services include Frontend development, UIUX, Design, Backend Development, Graphic Design,
+                            Web Hosting</p>
+                    </div>
+
+                    <div class="services-lists">
+
+                        <div class="service">
+                            <img class="hide" src="assets/icons/like.png" alt="">
+                            <div class="service-text">
+                                <h1>FrontEnd Development</h1>
+                                <p>Development of Static Websites with the use of my listed frontend Languages</p>
+                            </div>
+                        </div>
+
+                        <div class="service">
+                            <img class="hide" src="assets/icons/like.png" alt="">
+                            <div class="service-text">
+                                <h1>UI/UX Design</h1>
+                                <p>I design user friendly user interfaces with tools like Figma, Adobe XD.</p>
+                            </div>
+                        </div>
+
+                        <div class="service">
+                            <img class="hide" src="assets/icons/like.png" alt="">
+                            <div class="service-text">
+                                <h1>Backend Development</h1>
+                                <p>I can develop the backend of webapps and mobile apps with Java, Php, Python, Kotlin.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="service">
+                            <img class="hide" src="assets/icons/like.png" alt="">
+                            <div class="service-text">
+                                <h1>Web Hosting</h1>
+                                <p>Anything that has to do with Web Hosting. Shared, VPS Hosting.</p>
+                            </div>
+                        </div>
+
+                        <div class="service">
+                            <img class="hide" src="assets/icons/like.png" alt="">
+                            <div class="service-text">
+                                <h1>Graphic Design</h1>
+                                <p>I can design beautiful graphics with CorelDraw, Photoshop.</p>
+                            </div>
+                        </div>
+
+                        <div class="service">
+                            <img class="hide" src="assets/icons/like.png" alt="">
+                            <div class="service-text">
+                                <h1>Tutoring</h1>
+                                <p>Teaches those interested in taking this development path.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </section>
+
+
+            </div>
+
+
+            <div class="skills" id="portfolio">
+                <div class="about-top">
+                    <h1>Testimonials</h1>
+                    <span class="underline"></span>
+                    <p style="color: red;">These are testimonials from my clients</p>
+                </div>
+
+                <div class="testimonials-slider swiper">
+
+                    <div class="swiper-wrapper">
+
+                        <div class="slide-each swiper-slide">
+
+                            <div class="xyz">
+                                <div class="slider-main-text">
+                                    <p><span class="quote">"</span>Venkat Nelluri is an exceptional web developer who
+                                        transformed our website into a modern and user-friendly platform. Highly
+                                        recommend!<span class="quote">"</span></p>
+                                </div>
+
+                                <img src="assets/images/user-1.png" alt="">
+
+                                <div class="slider-title">
+                                    <h3>Mary Frank</h3>
+                                    <p>Dorset Estates</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="slide-each swiper-slide">
+
+                            <div class="xyz">
+                                <div class="slider-main-text">
+                                    <p><span class="quote">"</span> Venkat Nelluri is an exceptional web developer who
+                                        created a stunning website for my business. I highly recommend her
+                                        services.<span class="quote">"</span></p>
+                                </div>
+
+                                <img src="assets/images/user-2.png" alt="">
+
+                                <div class="slider-title">
+                                    <h3>Daniel Reymond</h3>
+                                    <p>Microsoft</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="slide-each swiper-slide">
+
+                            <div class="xyz">
+                                <div class="slider-main-text">
+                                    <p><span class="quote">"</span> Venkat Nelluri is an exceptional web developer! His
+                                        attention to detail and ability to bring ideas to life is unparalleled. Highly
+                                        recommend! <span class="quote">"</span></p>
+                                </div>
+
+                                <img src="assets/images/user-3.png" alt="">
+
+                                <div class="slider-title">
+                                    <h3>Moses Jessica</h3>
+                                    <p>Google</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="slide-each swiper-slide">
+
+                            <div class="xyz">
+                                <div class="slider-main-text">
+                                    <p><span class="quote">"</span> Venkat Nelluri's exceptional web development skills
+                                        have transformed our website, creating a seamless user experience. Professional,
+                                        reliable, and highly recommended." <span class="quote">"</span></p>
+                                </div>
+
+                                <img src="assets/images/user-4.jpg" alt="">
+
+                                <div class="slider-title">
+                                    <h3>Jeremy Lynch</h3>
+                                    <p>Content Creator</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="slide-each swiper-slide">
+
+                            <div class="xyz">
+                                <div class="slider-main-text">
+                                    <p><span class="quote">"</span> Venkat Nelluri is a skilled web developer who
+                                        transformed our website beyond our expectations. Highly recommended for her
+                                        professionalism and creativity. <span class="quote">"</span></p>
+                                </div>
+
+                                <img src="assets/images/user-1.png" alt="">
+
+                                <div class="slider-title">
+                                    <h3>Selena Gomez</h3>
+                                    <p>NY Times</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+
+
+
+            <div class="container">
+                <section id="contact">
+                    <div class="about-top">
+                        <h1>Contact and Links</h1>
+                        <span class="underline"></span>
+                    </div>
+
+
+                    <div class="contact-form">
+
+                        <a href="https:wa.me/+393898267495">
+
+                            <div class="contact-card">
+                                <div>
+                                    <img src="assets/icons/whatsapp%20(3).png" alt="">
+                                    <p>WhatsApp</p>
+                                </div>
+
+                            </div>
+
+                        </a>
+
+
+
+
+                        <a href="https://www.linkedin.com/in/venkat-nelluri-986797263">
+                            <div class="contact-card">
+                                <div>
+                                    <img src="assets/icons/linkedin%20(1).png" alt="">
+                                    <p>LinkedIn</p>
+                                </div>
+
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/nellurivenkat/">
+                            <div class="contact-card">
+                                <div>
+                                    <img src="assets/icons/github-dark.png" alt="">
+                                    <p>GitHub</p>
+                                </div>
+
+                            </div>
+                        </a>
+
+                        <a href="mailto:mail@gmail.com/">
+                            <div class="contact-card">
+                                <div>
+                                    <img src="assets/icons/gmail.png" alt="">
+                                    <p>Gmail</p>
+                                </div>
+
+                            </div>
+                        </a>
+
+                        <a href="https://www.instagram.com/">
+                            <div class="contact-card">
+                                <div>
+                                    <img src="assets/icons/instagram.png" alt="">
+                                    <p>Instagram</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="tel:+393898267495">
+                            <div class="contact-card">
+                                <div>
+                                    <img src="assets/icons/phone%20(1).png" alt="">
+                                    <p>+393898267495</p>
+                                </div>
+
+                            </div>
+                        </a>
+
+                    </div>
+
+                </section>
+
+
+            </div>
+
+            <div class="footer">
+                <p>Nelluri Venkat &copy; 2023</p>
+            </div>
+        </main>
+
+        <div class="scroll-to-top">
+
+            <img src="assets/icons/ios7-arrow-thin-up.png" alt="">
+
+        </div>
+
+    </div>
+
+
+    <div class="toggle-menu">
+        <img onclick="toggleMenu()" src="assets/icons/navicon_white.png" alt="">
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+
+        var typed = new Typed(".auto-type", {
+
+            strings: ["UI/UX Designer", "Graphic Designer", "Web Developer", "Mobile Developer"],
+            typeSpeed: 50,
+            backSpeed: 25,
+            loop: true
+        })
+
+    </script>
+
+
+    <!--Swiper Js-->
+    <script src="assets/script/swiper-bundle.min.js"></script>
+
+    <script>
+        /**
+             * Testimonials slider
+             */
+        new Swiper('.testimonials-slider', {
+            speed: 600,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false
+            },
+            slidesPerView: 'auto',
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+
+                1200: {
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                }
+            }
+        });
+    </script>
+    <script src="assets/script/script.js"></script>
 
 
 </body>
+
 </html>
-
-
-
-
-
-
